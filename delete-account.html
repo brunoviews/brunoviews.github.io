@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eliminar cuenta – Binged</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #0f0f0f;
+      color: #e0e0e0;
+      line-height: 1.7;
+      padding: 2rem 1.25rem 4rem;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid #2a2a2a;
+      padding-bottom: 1.5rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 0.4rem;
+    }
+
+    header p {
+      font-size: 0.875rem;
+      color: #888;
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #ffffff;
+      margin-top: 2rem;
+      margin-bottom: 0.6rem;
+    }
+
+    p, li {
+      font-size: 0.95rem;
+      color: #c0c0c0;
+    }
+
+    ul {
+      padding-left: 1.4rem;
+      margin-top: 0.4rem;
+    }
+
+    li {
+      margin-bottom: 0.35rem;
+    }
+
+    a {
+      color: #a78bfa;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #1e1e2e;
+      border: 1px solid #3a3a4a;
+      color: #a78bfa;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.2rem 0.65rem;
+      border-radius: 999px;
+      margin-bottom: 0.75rem;
+    }
+
+    .steps {
+      counter-reset: step-counter;
+      list-style: none;
+      padding-left: 0;
+      margin-top: 0.75rem;
+    }
+
+    .steps li {
+      counter-increment: step-counter;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .steps li::before {
+      content: counter(step-counter);
+      flex-shrink: 0;
+      width: 1.6rem;
+      height: 1.6rem;
+      background: #1e1e2e;
+      border: 1px solid #3a3a4a;
+      border-radius: 50%;
+      color: #a78bfa;
+      font-size: 0.78rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0.1rem;
+    }
+
+    .callout {
+      background: #1a1a2e;
+      border-left: 3px solid #a78bfa;
+      border-radius: 0.375rem;
+      padding: 0.9rem 1.1rem;
+      margin-top: 1.25rem;
+    }
+
+    .callout p {
+      margin: 0;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #2a2a2a;
+      font-size: 0.8rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">Binged</span>
+      <h1>Eliminar cuenta</h1>
+      <p>Última actualización: mayo de 2026</p>
+    </header>
+
+    <p>
+      Puedes eliminar tu cuenta de <strong>Binged</strong> en cualquier momento. Una vez confirmada
+      la eliminación, todos tus datos personales se borran de forma permanente e irreversible de
+      nuestros servidores.
+    </p>
+
+    <h2>¿Qué datos se eliminan?</h2>
+    <p>Al eliminar tu cuenta se borrarán permanentemente:</p>
+    <ul>
+      <li>Tu dirección de correo electrónico y contraseña cifrada.</li>
+      <li>Tu nombre y apellidos.</li>
+      <li>Todas tus listas de series y películas (viendo, completado, pendiente, abandonado).</li>
+      <li>Tus valoraciones personales y notas.</li>
+      <li>Cualquier otro dato asociado a tu perfil.</li>
+    </ul>
+    <p style="margin-top: 0.75rem;">
+      Una vez iniciado el proceso, la eliminación es <strong>irreversible</strong>. No podremos
+      recuperar ningún dato tras la confirmación.
+    </p>
+
+    <h2>Opción 1 — Desde la propia aplicación</h2>
+    <p>Si tienes acceso a tu cuenta, sigue estos pasos:</p>
+    <ol class="steps">
+      <li>Abre la aplicación Binged e inicia sesión con tu cuenta.</li>
+      <li>Navega a la sección <strong>Perfil</strong> (icono de usuario en la barra inferior).</li>
+      <li>Desplázate hasta la parte inferior y pulsa <strong>Eliminar cuenta</strong>.</li>
+      <li>Lee el aviso de confirmación y pulsa <strong>Confirmar</strong> para proceder.</li>
+    </ol>
+    <p style="margin-top: 0.75rem;">
+      Tu sesión se cerrará automáticamente y todos tus datos quedarán eliminados de inmediato.
+    </p>
+
+    <h2>Opción 2 — Solicitud por correo electrónico</h2>
+    <p>
+      Si no puedes acceder a la aplicación (por ejemplo, olvidaste tu contraseña o el dispositivo
+      ya no está disponible), puedes solicitar la eliminación de tu cuenta enviándonos un correo
+      electrónico:
+    </p>
+    <div class="callout">
+      <p>
+        📧 <a href="mailto:bingedapp@bdasilva.es">bingedapp@bdasilva.es</a><br />
+        Asunto sugerido: <em>Solicitud de eliminación de cuenta</em><br />
+        Incluye la dirección de correo electrónico asociada a tu cuenta de Binged.
+      </p>
+    </div>
+    <p style="margin-top: 0.75rem;">
+      Atenderemos tu solicitud en un plazo máximo de <strong>30 días</strong>, conforme al
+      Reglamento General de Protección de Datos (RGPD) de la Unión Europea. Te enviaremos una
+      confirmación por correo electrónico una vez completada la eliminación.
+    </p>
+
+    <h2>Más información</h2>
+    <p>
+      Para conocer cómo tratamos tus datos, consulta nuestra
+      <a href="privacy.html">Política de Privacidad</a>. Si tienes cualquier otra duda, no dudes
+      en escribirnos al correo indicado anteriormente.
+    </p>
+
+    <footer>
+      <p>© 2026 Binged. Todos los derechos reservados.</p>
+    </footer>
+  </div>
+</body>
+</html>
