@@ -130,7 +130,7 @@
     <h2>1. Información que recogemos</h2>
     <p>Al crear una cuenta y usar la aplicación, recogemos los siguientes datos:</p>
     <ul>
-      <li><strong>Datos de cuenta:</strong> dirección de correo electrónico y contraseña (almacenada de forma cifrada).</li>
+      <li><strong>Datos de cuenta:</strong> inicias sesión con tu cuenta de Google. De ese proceso recibimos tu dirección de correo electrónico (ya verificada por Google). No creamos ni gestionamos contraseñas.</li>
       <li><strong>Datos de perfil:</strong> un alias elegido por ti y, de forma opcional, la nota que obtuviste en una convocatoria anterior (que solo se usa como referencia personal de progreso).</li>
       <li><strong>Datos de uso:</strong> tu actividad de estudio dentro de la app — resultados de simulacros y tests, respuestas, puntuaciones, racha de días y progreso por temas.</li>
       <li><strong>Datos de compra:</strong> el estado de tu compra (si has desbloqueado la versión de pago). El pago lo procesan Google Play y RevenueCat; <strong>nosotros no recibimos ni almacenamos datos de tu tarjeta</strong>.</li>
@@ -161,7 +161,12 @@
     <p>Para ofrecer el servicio, utilizamos los siguientes proveedores externos:</p>
     <ul>
       <li>
-        <strong>Supabase</strong> — plataforma de backend que gestiona la autenticación y el almacenamiento de datos
+        <strong>Google (inicio de sesión)</strong> — el acceso a la app se realiza mediante tu cuenta de Google
+        (Google Sign-In). Google nos facilita tu correo electrónico verificado; nosotros no vemos tu contraseña.
+        Consulta la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">política de privacidad de Google</a>.
+      </li>
+      <li>
+        <strong>Supabase</strong> — plataforma de backend que gestiona la sesión y el almacenamiento de datos
         (perfil, progreso, resultados). Los datos se almacenan en servidores de Supabase conforme a su
         <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">política de privacidad</a>.
       </li>
@@ -188,7 +193,7 @@
 
     <h2>6. Seguridad</h2>
     <p>
-      Las contraseñas se almacenan de forma cifrada mediante los mecanismos de autenticación de Supabase.
+      El inicio de sesión se realiza mediante Google, por lo que no creamos ni almacenamos contraseñas.
       La comunicación entre la app y los servidores se realiza siempre a través de HTTPS. Aunque adoptamos
       medidas razonables para proteger tu información, ningún sistema es completamente infalible.
     </p>
